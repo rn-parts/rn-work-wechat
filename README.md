@@ -40,12 +40,12 @@ $ npx pod-install
 #### Android
 1. android/settings.gradle
 ```
-include ':react-native-wechat-work-plus-plus'
-project(':react-native-wechat-work-plus-plus').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-wechat-work-plus-plus/lib/android')
+include ':rn-work-wechat'
+project(':rn-work-wechat').projectDir = new File(rootProject.projectDir, '../node_modules/rn-work-wechat/lib/android')
 ```
 2. android/app/build.gradle
 ```
-implementation project(':react-native-wechat-work-plus-plus')
+implementation project(':rn-work-wechat')
 ```
 3. MainApplication
 ```
