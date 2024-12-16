@@ -1,17 +1,9 @@
-# react-native-wechat-work-plus-plus
-
-千愁散尽一剑轻
-
-## 感谢
-
-[react-native-wechat-work](https://github.com/xinpureZhu/react-native-wechat-work)
-
-[react-native-wechat-work-plus](https://www.npmjs.com/package/react-native-wechat-work-plus?activeTab=readme)
+# rn-work-wechat
 
 ## Getting started
 
 ```
-$ yarn add react-native-wechat-work-plus-plus
+$ yarn add rn-work-wechat
 $ npx pod-install
 ```
 
@@ -62,10 +54,9 @@ getPackages函数里，添加
 packages.add(new RNWeChatWorkPackage());
 ```
 
-
 ## Usage
 ```javascript
-import * as RNWeChatWork from 'react-native-wechat-work-plus-plus';
+import * as RNWeChatWork from 'rn-work-wechat';
 
 // 注册
 async () => {
@@ -83,6 +74,28 @@ async () => {
   try {
     console.log('begin.....................');
     let res = await RNWeChatWork.SSOAuth('test');
+    console.log('success.....................', res);
+  } catch (error) {
+    console.log('error.....................', error);
+  }
+}
+
+// 分享图片
+async () => {
+  try {
+    console.log('begin.....................');
+    let res = await RNWeChatWork.shareImage('test');
+    console.log('success.....................', res);
+  } catch (error) {
+    console.log('error.....................', error);
+  }
+}
+
+// 分享链接
+async () => {
+  try {
+    console.log('begin.....................');
+    let res = await RNWeChatWork.shareLinkAttachment('test');
     console.log('success.....................', res);
   } catch (error) {
     console.log('error.....................', error);

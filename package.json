@@ -1,24 +1,17 @@
 {
-  "name": "react-native-wechat-work-plus-plus",
-  "version": "1.3.0",
-  "description": "react-native 企业微信登录分享, 支持 iOS + Android",
+  "name": "rn-work-wechat",
+  "version": "1.0.0",
+  "description": "React Native 企业微信 SDK",
   "main": "lib/index.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/henrychao24/react-native-wechat-work-plus-plus"
-  },
   "keywords": [
     "wechat",
     "wechat-work",
-    "wechat-work-plus",
-    "wechat-work-plus-plus",
     "react",
     "react-native",
-    "react-component",
     "ios",
     "android",
     "企业微信",
@@ -26,7 +19,7 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "react-native": ">=0.41.2"
+    "react-native": ">=0.63.5"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
